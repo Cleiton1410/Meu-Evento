@@ -1,0 +1,56 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrições Para o Evento</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu de Hambúrguer -->
+    <nav class="menu-hamburguer">
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; <!-- Ícone de hambúrguer -->
+      </div>
+      <ul class="menu-navegacao2" id="menuNavegacao">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="inscricao.html">Inscrições</a></li>
+        <li><a href="palestrantes.html">Palestrantes</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <header class="imagem-pg3">
+    </header>
+    <main>
+        <section>
+            <h2 class="title-pg3">Inscreva-se Aqui!</h2>
+            <form  action="Inscreva-se aqui!" method="post">
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required><br><br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu Telefone" required><br><br>
+                    <label for="opcoes-ingressos">Opções de Ingressos:</label><br>
+                    <select id="ingresso" name="ingresso" required>
+                      <option value="" disabled selected>Selecione o tipo de ingresso</option>
+                      <option value="standard">Standard - R$ 100,00</option>
+                      <option value="vip">VIP - R$ 200,00</option>
+                      <option value="online">Online - R$ 50,00</option>
+                    </select>
+            <br><br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <script>
+            function toggleMenu() {
+              const menu = document.querySelector('.menu-navegacao2');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+          </script>
+</body>
+</html>

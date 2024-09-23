@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palestrantes</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body>
+    <!-- Menu de Hambúrguer -->
+    <nav class="menu-hamburguer">
+      <div class="menu-icon" onclick="toggleMenu()">
+        &#9776; <!-- Ícone de hambúrguer -->
+      </div>
+      <ul class="menu-navegacao2">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="inscricoes.html">Inscrições</a></li>
+        <li><a href="palestrantes.html">Palestrantes</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <header class="titulo-palestrantes-header">
+      <h1>Palestrantes do evento</h1>
+      <div class="imagem-pg2-header">
+      </div>
+    </header>
+    <main>
+      <ul class="lista">
+        <li>
+          <button class="toggle-btn">Dr. Mariana Silva</button>
+          <div class="descricao">
+            <p><strong>Palestra:</strong> "O Futuro da IA"</p>
+            <p><strong>Biografia:</strong> Dr. Mariana Silva é uma renomada especialista em Inteligência Artificial com PhD pela Universidade de Stanford. Com mais de 10 anos de experiência, ela lidera projetos que utilizam IA para diagnosticar doenças, focando no desenvolvimento de sistemas de assistência médica avançados. Seu trabalho já foi reconhecido em diversas publicações científicas internacionais, e ela é uma das principais vozes em IA aplicada no Brasil.</p>
+          </div>
+        </li>
+        <li>
+          <button class="toggle-btn">Luiz Andrade</button>
+          <div class="descricao">
+            <p><strong>Painel:</strong> "Tecnologia e Ética"</p>
+            <p><strong>Biografia:</strong> Luiz Andrade é consultor e pesquisador de Ética em Tecnologias Emergentes. Com passagens por universidades internacionais, ele é um defensor da regulamentação ética em áreas como IA e Big Data. Ele promove um debate importante sobre os impactos morais e sociais da tecnologia na sociedade moderna.</p>
+          </div>
+        </li>
+        <li>
+          <button class="toggle-btn">Ana Paula Menezes</button>
+          <div class="descricao">
+            <p><strong>Workshop:</strong> "Desenvolvendo com Blockchain"</p>
+            <p><strong>Biografia:</strong> Ana Paula Menezes é engenheira de software e cofundadora da startup Blockchain Solutions. Ela possui vasta experiência na aplicação de soluções baseadas em Blockchain, voltadas para a gestão pública e o setor privado. Ana é uma das principais vozes no uso da tecnologia para promover transparência e eficiência.</p>
+          </div>
+        </li>
+        <li>
+          <button class="toggle-btn">Ricardo Farias</button>
+          <div class="descricao">
+            <p><strong>Palestra:</strong> "Cibersegurança no Mundo Digital"</p>
+            <p><strong>Biografia:</strong> Ricardo Farias é especialista em Cibersegurança com mais de 15 anos de experiência. Ele atua como consultor para grandes corporações e escreveu diversos livros sobre segurança digital, ajudando a proteger empresas contra ameaças cibernéticas.</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <script> /* aqui usei um script do java para estiliza um botao que ao precionado mostra a biografia*/
+      const buttons = document.querySelectorAll('.toggle-btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const description = button.nextElementSibling;
+          description.style.display =
+            description.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu-navegacao2');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
+  </body>
+</html>

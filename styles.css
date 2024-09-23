@@ -1,0 +1,335 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização geral do corpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+.imagem-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background-image: url('img/fundo-html.png');
+    background-position: center;
+    
+
+    z-index: -1;
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+}
+
+.meu-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.texto-header {
+    color: rgb(254, 254, 254);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.atracoes-principais {
+    margin-top: 450px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagem-pg2-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/imgPg3-html.png'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+}
+
+.titulo-pag2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #d1d5db; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-pg2-header {
+    color: rgb(13, 13, 13);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.tabela-de-horarios {
+    width: 80%; /* Define a largura da tabela */
+    margin: 100px auto 20px; /* Margem superior e inferior para espaçamento e centralização horizontal */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #010812;
+    border-collapse: collapse; /* Opcional: remove espaços entre as células da tabela */
+    background-color:#ccc
+    
+}
+
+table {
+    width: 100%; /* Garante que a tabela ocupe toda a largura do contêiner */
+}
+
+td, th {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #060606;
+}
+
+.horario, .atividade, .descricoes, .palestrante {
+    font-weight: 600;
+    color: #111827;
+}
+
+.titulo-tabela {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+.lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toggle-btn {
+    display: block;
+    background-color: #333;
+    color:#f4f4f4;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.descricao {
+    display: none; /* Ocultar as descrições por padrão */
+  }
+  
+.title-pg3{
+    text-align: center;
+}
+.imagem-pg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/imgPg3-html.png'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+}
+
+/* Estilo da página de contato */
+
+h1.titulo-contato {
+    text-align: center;
+    color: #111827;
+    margin-top: 20px;
+}
+
+.informacoes-contato, .mapa-local, .formulario-contato {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-contato h2, .mapa-local h2, .formulario-contato h2 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.informacoes-contato p {
+    font-size: 16px;
+    color: #333;
+}
+
+.imagem-mapa {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.formulario-contato label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario-contato textarea {
+    resize: vertical;
+}
+
+.formulario-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contato button:hover {
+    background-color: #45a049;
+}
+/* Estilizando o Menu de Navegação */
+nav {
+  background-color: #333;
+}
+
+.menu-navegacao {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-navegacao li {
+  margin: 0;
+}
+
+.menu-navegacao a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu-navegacao a:hover {
+  background-color: #575757;
+}
+  .menu-hamburguer {
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.menu-navegacao2 {
+    display: none; /* Ocultar o menu por padrão */
+  }
+  
+  .menu-navegacao2.open {
+    display: block; /* Mostrar o menu quando a classe 'open' for adicionada */
+  }
+  
+  .descricao {
+    display: none; /* Ocultar descrições dos palestrantes por padrão */
+  }
+  
+  .descricao.open {
+    display: block; /* Mostrar a descrição quando a classe 'open' for adicionada */
+  }
+  
+/* Centralizar o formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilizar e centralizar os rótulos e inputs */
+  form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilizar os rótulos */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilizar os inputs e textarea */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilizar o botão de envio */
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+ 
+ 
