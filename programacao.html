@@ -17,13 +17,13 @@
     <div class="menu-icon" onclick="toggleMenu()">
       &#9776; <!-- Ícone de hambúrguer -->
     </div>
-    <ul class="menu-navegacao2">
+    <ul class="menu-navegacao" id="menuNavegacao">
       <li><a href="index.html">Início</a></li>
       <li><a href="inscricoes.html">Inscrições</a></li>
       <li><a href="palestrantes.html">Palestrantes</a></li>
       <li><a href="programacao.html">Programação</a></li>
       <li><a href="contato.html">Contato</a></li>
-    </ul>
+  </ul>
   </nav>
     <header class="imagem-pg2-header">
       <h1 class="titulo-pag2">Quadro de Horários do Evento</h1>
@@ -133,8 +133,8 @@
     </main>
     <script>
       function toggleMenu() {
-        const menu = document.querySelector('.menu-navegacao2');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        const menu = document.querySelector('.menu-navegacao');
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
       }
     </script>
   </body>

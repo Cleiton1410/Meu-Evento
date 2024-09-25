@@ -11,7 +11,7 @@
       <div class="menu-icon" onclick="toggleMenu()">
         &#9776; <!-- Ícone de hambúrguer -->
       </div>
-      <ul class="menu-navegacao2" id="menuNavegacao">
+      <ul class="menu-navegacao" id="menuNavegacao">
         <li><a href="index.html">Início</a></li>
         <li><a href="inscricao.html">Inscrições</a></li>
         <li><a href="palestrantes.html">Palestrantes</a></li>
@@ -47,10 +47,10 @@
             </form>
         </section>
         <script>
-            function toggleMenu() {
-              const menu = document.querySelector('.menu-navegacao2');
-              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-            }
-          </script>
+          function toggleMenu() {
+            const menu = document.querySelector('.menu-navegacao');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+          }
+        </script>
 </body>
 </html>

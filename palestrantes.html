@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palestrantes</title>
     <link rel="stylesheet" href="styles.css" />
-    
+    <style>
+      /* Estilos adicionais para garantir o funcionamento */
+      .menu-navegacao {
+        display: none; /* O menu começa escondido */
+      }
+
+      .descricao {
+        display: none; /* As descrições também começam escondidas */
+        transition: all 0.3s ease; /* Transição suave para exibir as descrições */
+      }
+
+      .menu-icon {
+        cursor: pointer; /* Adiciona um cursor de clique ao ícone do menu */
+      }
+    </style>
   </head>
   <body>
     <!-- Menu de Hambúrguer -->
@@ -13,9 +27,9 @@
       <div class="menu-icon" onclick="toggleMenu()">
         &#9776; <!-- Ícone de hambúrguer -->
       </div>
-      <ul class="menu-navegacao2">
+      <ul class="menu-navegacao" id="menuNavegacao">
         <li><a href="index.html">Início</a></li>
-        <li><a href="inscricoes.html">Inscrições</a></li>
+        <li><a href="inscricao.html">Inscrições</a></li>
         <li><a href="palestrantes.html">Palestrantes</a></li>
         <li><a href="programacao.html">Programação</a></li>
         <li><a href="contato.html">Contato</a></li>
@@ -23,8 +37,7 @@
     </nav>
     <header class="titulo-palestrantes-header">
       <h1>Palestrantes do evento</h1>
-      <div class="imagem-pg2-header">
-      </div>
+      <div class="imagem-pg2-header"></div>
     </header>
     <main>
       <ul class="lista">
@@ -59,7 +72,16 @@
       </ul>
     </main>
 
-    <script> /* aqui usei um script do java para estiliza um botao que ao precionado mostra a biografia*/
+    <!-- Script para o menu de hambúrguer -->
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu-navegacao');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
+
+    <!-- Script para exibir e esconder as biografias -->
+    <script>
       const buttons = document.querySelectorAll('.toggle-btn');
       buttons.forEach(button => {
         button.addEventListener('click', () => {
@@ -68,12 +90,6 @@
             description.style.display === 'block' ? 'none' : 'block';
         });
       });
-    </script>
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector('.menu-navegacao2');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-      }
     </script>
   </body>
 </html>
