@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <!-- Menu de Hambúrguer -->
     <nav class="menu-hamburguer">
         <div class="menu-icon" onclick="toggleMenu()">
             &#9776; <!-- Ícone de hambúrguer -->
         </div>
         <ul class="menu-navegacao" id="menuNavegacao">
             <li><a href="index.html">Início</a></li>
-            <li><a href="inscricoes.html">Inscrições</a></li>
+            <li><a href="inscricao.html">Inscrições</a></li>
             <li><a href="palestrantes.html">Palestrantes</a></li>
             <li><a href="programacao.html">Programação</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
-    <header class="imagem-pg2-header">
-      <h1 class="titulo-contato">Entre em Contato</h1>
+    <header class="imagem-contato-header">
     </header>
     <main>
       <section class="informacoes-contato">
+        <h1 class="titulo-contato">Entre em Contato</h1>
         <h2>Informações do Organizador</h2>
         <p><strong>Nome:</strong> EventoTech Brasil</p>
         <p><strong>E-mail:</strong> contato@eventotechbrasil.com</p>
@@ -53,33 +54,15 @@
       </section>
     </main>
     <script>
-        // Abrir o modal
-        function openModal() {
-          var modal = document.getElementById("myModal");
-          var modalImg = document.getElementById("modalImg");
-          var img = document.getElementById("mapaImg");
-          modal.style.display = "flex";
-          modalImg.src = img.src;
-        }
-  
-        // Fechar o modal
-        function closeModal() {
-          var modal = document.getElementById("myModal");
-          modal.style.display = "none";
-        }
-  
-        // Fechar o modal se o usuário clicar fora da imagem
-        window.onclick = function(event) {
-          var modal = document.getElementById("myModal");
-          if (event.target === modal) {
-            modal.style.display = "none";
-          }
-        };
-  
-        function toggleMenu() {
-          const menu = document.querySelector('.menu-navegacao');
-          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-        }
-      </script>
-  </body>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu-navegacao');
+        menu.classList.toggle('show');
+      }
+    </script>
+    <footer>
+        <div class="rodape-conteudo">
+            <p>&copy; 2024 Techcon . Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
 </html>
